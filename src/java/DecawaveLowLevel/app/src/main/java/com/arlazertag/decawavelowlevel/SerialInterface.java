@@ -11,11 +11,10 @@ import com.hoho.android.usbserial.driver.ProbeTable;
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
-import com.hoho.android.usbserial.util.SerialInputOutputManager;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.Executors;
 
 public class SerialInterface  {
     private static final String TAG = "DecawaveLowLevel-Java";
@@ -27,7 +26,7 @@ public class SerialInterface  {
     private static UsbDeviceConnection usbDeviceConnection;
     private static UsbSerialPort usbSerialPort;
 
-    //Function called from the C#-side to register callbacks
+    //Function called from the C#-side to register exception callback listener
     public static void setCallbackListener(UnityCallback callback) {
         unityCallback = callback;
     }
@@ -111,23 +110,7 @@ public class SerialInterface  {
             return false;
         }
 
-        //Register serial library callbacks
-        SerialInputOutputManager serialInputOutputManager = new SerialInputOutputManager(usbSerialPort, new SerialListener());
-        Executors.newSingleThreadExecutor().submit(serialInputOutputManager);
         return true;
-    }
-
-    //Inner-class to act as listener for serial library + pass events to C#-side
-    private static class SerialListener implements SerialInputOutputManager.Listener{
-        @Override
-        public void onNewData(byte[] data) {
-            unityCallback.onNewData(data);
-        }
-
-        @Override
-        public void onRunError(Exception e) {
-            unityCallback.onException(e);
-        }
     }
 
     //Function called from C#-side to write data to the serial port
@@ -138,6 +121,23 @@ public class SerialInterface  {
             unityCallback.onException(e);
             return false;
         }
+
         return true;
+    }
+
+    //Function called from C#-side to read data from the serial port
+    public static byte[] read(int timeout) {
+        //Create the largest buffer allowed by the serial library (avoid any possible data loss)
+        byte[] dest = new byte[16384];
+        int len = 0;
+
+        try {
+            len = usbSerialPort.read(dest, timeout);
+        } catch (IOException e) {
+            unityCallback.onException(e);
+        }
+
+        //We don't want to return 16kb of data to Unity, so only return what was received
+        return Arrays.copyOfRange(dest, 0, len);
     }
 }
