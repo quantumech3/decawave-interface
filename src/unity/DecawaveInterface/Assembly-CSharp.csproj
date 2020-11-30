@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Tests\LowLevel\Scripts\LowLevelTestDriver.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -240,9 +240,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.0f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.0f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -610,14 +607,59 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
-      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.Management">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Subsystem.Registration">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.XR.ARCoreExtensions">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Google.XR.ARCoreExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.XR.ARCoreExtensions.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Google.XR.ARCoreExtensions.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
