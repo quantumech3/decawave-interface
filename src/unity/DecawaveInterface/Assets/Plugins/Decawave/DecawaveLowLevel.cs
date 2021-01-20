@@ -229,7 +229,8 @@ namespace Decawave
             }
 
             /// <summary>
-            /// Read only attribute that returns a list of AnchorData objects containing the ID of each anchor and each associated distance if possible, else throws DecawaveLowLevelException
+            /// Read only attribute that returns a list of AnchorData objects containing the ID of each anchor and each associated distance if possible, else throws DecawaveLowLevelException.
+            /// Returns empty array if data retrieved from Decawave is corrupt or incomplete
             /// </summary>
             /// <exception cref="LowLevelException"></exception>
             public static Common.AnchorData[] anchors
@@ -261,7 +262,7 @@ namespace Decawave
                     {
                         Debug.Log("[LowLevelInterface] Dropped garbage distances");
                         Serial.Flush(1);
-                        return anchors;
+                        return new Common.AnchorData[0];
                     }
                 }
             }
