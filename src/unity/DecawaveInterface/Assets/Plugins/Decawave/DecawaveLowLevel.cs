@@ -253,7 +253,7 @@ namespace Decawave
                         for (int i = 0; i < nDistancesRecorded; i++)
                         {
                             anchors[i].id = BitConverter.ToUInt16(rawData, 20 * (i + 1) + 1);
-                            anchors[i].distance = BitConverter.ToUInt32(rawData, 20 * (i + 1) + 3) / 100.;
+                            anchors[i].distance = ((double) BitConverter.ToUInt32(rawData, 20 * (i + 1) + 3)) / 1000f;
                         }
 
                         return anchors;
