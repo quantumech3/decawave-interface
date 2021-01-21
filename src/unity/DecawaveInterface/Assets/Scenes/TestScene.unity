@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 577256230}
   - component: {fileID: 577256231}
   - component: {fileID: 577256232}
+  - component: {fileID: 577256233}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -295,6 +296,20 @@ MonoBehaviour:
   m_PlanePrefab: {fileID: 7359593981466314070, guid: 8e84a134a0811184c8c99fe8163d5f9f,
     type: 3}
   m_DetectionMode: -1
+--- !u!114 &577256233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577256227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AnchorPrefab: {fileID: 4869069570339909344, guid: cca0f8e537abd6540b496001b98833dd,
+    type: 3}
 --- !u!1 &963591490
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +474,7 @@ GameObject:
   - component: {fileID: 1376740732}
   - component: {fileID: 1376740731}
   - component: {fileID: 1376740730}
+  - component: {fileID: 1376740734}
   m_Layer: 0
   m_Name: AR Camera
   m_TagString: Untagged
@@ -566,3 +582,17 @@ Transform:
   m_Father: {fileID: 577256229}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1376740734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376740728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c30fd617eabaaf4db1ec542f47fe908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 577256230}
+  anchor: {fileID: 0}

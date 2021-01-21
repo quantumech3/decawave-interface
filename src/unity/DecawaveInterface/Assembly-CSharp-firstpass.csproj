@@ -63,8 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\Decawave\ARPlayerPoseTracker.cs" />
     <Compile Include="Assets\Plugins\Decawave\DecawaveCommon.cs" />
+    <Compile Include="Assets\Plugins\Decawave\DecawaveHighLevel.cs" />
     <Compile Include="Assets\Plugins\Decawave\DecawaveLowLevel.cs" />
+    <None Include="Assets\Plugins\MathNet.Numerics.xml" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -241,6 +244,9 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.0f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Assets/Plugins/MathNet.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.0f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -661,6 +667,15 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
