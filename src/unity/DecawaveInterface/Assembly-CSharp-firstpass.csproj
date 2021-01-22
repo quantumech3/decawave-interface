@@ -67,6 +67,7 @@
     <Compile Include="Assets\Plugins\Decawave\DecawaveCommon.cs" />
     <Compile Include="Assets\Plugins\Decawave\DecawaveHighLevel.cs" />
     <Compile Include="Assets\Plugins\Decawave\DecawaveLowLevel.cs" />
+    <Compile Include="Assets\Plugins\Decawave\Prefabs\RF Ghost\RFGhostBehavior.cs" />
     <None Include="Assets\Plugins\MathNet.Numerics.xml" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -602,6 +603,9 @@
     <Reference Include="Unity.Subsystem.Registration">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -641,6 +645,9 @@
     <Reference Include="Google.XR.ARCoreExtensions.Editor">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/Google.XR.ARCoreExtensions.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
@@ -667,12 +674,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>C:/Users/quant/Documents/Actual projects/decawave-interface/decawave-interface/src/unity/DecawaveInterface/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>

@@ -43,7 +43,7 @@ namespace Decawave
             /// <param name="rfDerived"></param>
             /// <param name="vioDerived"></param>
             /// <returns></returns>
-            public static Transform toFusion(Transform rfDerived, Transform vioDerived)
+            public static Transform ToFusion(Transform rfDerived, Transform vioDerived)
             {
                 return null; // TODO (Use average for now)
             }
@@ -61,7 +61,7 @@ namespace Decawave
             /// <param name="vioOrigin">Transform of VIO origin</param>
             /// <param name="vioPosition">Position in VIO space</param>
             /// <returns>Position in RF space</returns>
-            public static Vector3 positionToRF(Transform rfOrigin, Transform vioOrigin, Vector3 vioPosition)
+            public static Vector3 PositionToRF(Transform rfOrigin, Transform vioOrigin, Vector3 vioPosition)
             {
                 return Vector3.zero; // TODO
             }
@@ -73,7 +73,7 @@ namespace Decawave
             /// <param name="vioOrigin">Transform of VIO origin</param>
             /// <param name="vioRotation">Orientation in VIO space</param>
             /// <returns>Position in RF space</returns>
-            public static Vector3 rotationToRF(Transform rfOrigin, Transform vioOrigin, Quaternion vioRotation)
+            public static Vector3 RotationToRF(Transform rfOrigin, Transform vioOrigin, Quaternion vioRotation)
             {
                 return Vector3.zero; // TODO
             }
@@ -85,7 +85,7 @@ namespace Decawave
             /// <param name="vioOrigin"></param>
             /// <param name="vioTransform"></param>
             /// <returns></returns>
-            public static Transform transformToRF(Transform rfOrigin, Transform vioOrigin, Transform vioTransform)
+            public static Transform TransformToRF(Transform rfOrigin, Transform vioOrigin, Transform vioTransform)
             {
                 return null; // TODO
             }
