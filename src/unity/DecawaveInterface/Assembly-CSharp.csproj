@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Tests\HighLevel\NetworkGUI\Scripts\NetworkGUI.cs" />
     <Compile Include="Assets\Tests\HighLevel\Scripts\AnchorPlacementHandler.cs" />
     <Compile Include="Assets\Tests\HighLevel\Scripts\LocalAnchorDisplacementLogger.cs" />
     <Compile Include="Assets\Tests\HighLevel\Scripts\PositionLogger.cs" />
