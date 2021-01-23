@@ -13,6 +13,7 @@ namespace Decawave
         {
             private int _id;
             private double _distance;
+            private float _qualityFactor;
 
             /// <summary>
             /// id of RF anchor measured
@@ -43,6 +44,21 @@ namespace Decawave
                 set
                 {
                     this._distance = value;
+                }
+            }
+            /// <summary>
+            /// Quality factor of distance from RF anchor
+            /// </summary>
+            public float qualityFactor
+            {
+                get
+                {
+                    return _qualityFactor;
+                }
+
+                set
+                {
+                    this._qualityFactor = value;
                 }
             }
         }

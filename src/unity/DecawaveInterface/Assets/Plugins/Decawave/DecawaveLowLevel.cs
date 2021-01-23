@@ -254,6 +254,7 @@ namespace Decawave
                         {
                             anchors[i].id = BitConverter.ToUInt16(rawData, 20 * (i + 1) + 1);
                             anchors[i].distance = ((double) BitConverter.ToUInt32(rawData, 20 * (i + 1) + 3)) / 1000f;
+                            anchors[i].qualityFactor = ((float) rawData[20 * (i + 1) + 7]) / 100f;
                         }
 
                         return anchors;
