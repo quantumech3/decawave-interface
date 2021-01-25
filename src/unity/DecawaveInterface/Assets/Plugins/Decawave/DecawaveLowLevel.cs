@@ -21,7 +21,7 @@ namespace Decawave
             private static AndroidJavaClass javaSerialInterface;
 
 
-            //TODO: Double check that these values hold for the second tag
+            
             /// <summary>
             /// Vendor ID of all Decawaves (probably)
             /// </summary>
@@ -38,7 +38,7 @@ namespace Decawave
 
                 public void onException(AndroidJavaObject exception)
                 {
-                    throw new LowLevelException(exception.Call<string>("toString")); // TODO test this
+                    throw new LowLevelException(exception.Call<string>("toString"));
                 }
             }
 

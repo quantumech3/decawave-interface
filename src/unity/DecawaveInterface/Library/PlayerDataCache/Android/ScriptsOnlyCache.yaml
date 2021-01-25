@@ -1,9 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-firstpass.dll:
+    - RFGhostBehavior
     Assembly-CSharp.dll:
     - NetworkGUI
     - PositionLogger
-    - RFPoseLogger
     - RotatePivot
     Unity.Mobile.AndroidLogcat.Editor.dll:
     - Unity.Android.Logcat.AndroidLogcatConsoleWindow
@@ -63,9 +64,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -94,6 +103,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13112}
     - Class: 114
+      Script: {instanceID: 13264}
+    - Class: 114
       Script: {instanceID: 13408}
     - Class: 114
       Script: {instanceID: 13556}
@@ -101,8 +112,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13972}
     - Class: 114
       Script: {instanceID: 14124}
-    - Class: 114
-      Script: {instanceID: 14762}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -763,7 +772,7 @@ ScriptsOnlyBuild:
     className: ARCoreExtensionsConfig
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 7af12a666e5f7b2c4c2ceb0b60bb2d04
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: 
     className: RFGhostBehavior
