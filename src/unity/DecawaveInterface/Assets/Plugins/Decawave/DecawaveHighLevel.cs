@@ -110,7 +110,13 @@ namespace Decawave
             /// <returns></returns>
             public static Transform ToFusion(Transform rfDerived, Transform vioDerived)
             {
-                return null; // TODO (Use average for now)
+                // TODO: Test ToFusion()
+                Transform fusion = (new GameObject()).transform; // Instantiate new transform. This is the easiest way to do it
+                fusion.position = (rfDerived.position + vioDerived.position) / 2f;
+                fusion.rotation = rfDerived.rotation; // Both rotations are driven by VIO right now. 
+                fusion.localScale = rfDerived.localScale; // Scale is never changed.
+
+                return fusion;
             }
         }
 
