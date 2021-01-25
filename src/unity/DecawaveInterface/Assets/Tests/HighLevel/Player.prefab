@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3887157940192531188}
   - component: {fileID: 3406406420808018515}
   - component: {fileID: 7558670412123172715}
+  - component: {fileID: 4127357025727676997}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -78,7 +79,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3df7e9d96e0943468c7a9a12561bd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vioOrigin: {fileID: 0}
   rfOriginName: RF Origin
   rfOrigin: {fileID: 0}
   rfGhostPrefab: {fileID: 7966120052895038931, guid: d0ca561897ace2a45ba9867bf22fa720,
@@ -87,6 +87,22 @@ MonoBehaviour:
     type: 3}
   rfPosition: {x: 0, y: 0, z: 0}
   vioPosition: {x: 0, y: 0, z: 0}
+  rfGhost: {fileID: 0}
+  vioGhost: {fileID: 0}
+--- !u!114 &4127357025727676997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3887157940192531187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a91b474344c165b479c61369a5b11996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastManager: {fileID: 0}
+  anchorManager: {fileID: 0}
 --- !u!1 &3887157941128656536
 GameObject:
   m_ObjectHideFlags: 0

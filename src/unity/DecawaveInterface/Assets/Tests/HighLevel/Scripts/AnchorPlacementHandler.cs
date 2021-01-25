@@ -18,7 +18,8 @@ public class AnchorPlacementHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        raycastManager = GameObject.Find("AR Session Origin").GetComponent<ARRaycastManager>();
+        anchorManager = GameObject.Find("AR Session Origin").GetComponent<ARAnchorManager>();
     }
 
     // Update is called once per frame
@@ -30,8 +31,11 @@ public class AnchorPlacementHandler : MonoBehaviour
             raycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), raycastHits);
 
             pseudoCloudAnchor = anchorManager.AddAnchor(raycastHits[0].pose);
+
+            ARPlayerPoseTracker.vioOrigin = pseudoCloudAnchor.gameObject;
         }
 
-        // TODO: Handle setting ARPlayerPoseTracker's cloud anchor attribute to the instantiated local anchor. It will be the programmers responsability to set this in the actual game.
+        
+        
     }
 }

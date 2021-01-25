@@ -103,6 +103,17 @@ namespace Decawave
             }
 
             /// <summary>
+            /// Given positions derived from various localization method, will attempt to fuse them with Mallesh Dasari's algorithm
+            /// </summary>
+            /// <param name="rfDerived"></param>
+            /// <param name="vioDerived"></param>
+            /// <returns></returns>
+            public static Vector3 ToFusion(Vector3 rfDerived, Vector3 vioDerived)
+            { 
+                return (rfDerived + vioDerived) / 2f;
+            }
+
+            /// <summary>
             /// Given transforms derived from various localization method, will attempt to fuse them with Mallesh Dasari's algorithm
             /// </summary>
             /// <param name="rfDerived"></param>
@@ -110,55 +121,12 @@ namespace Decawave
             /// <returns></returns>
             public static Transform ToFusion(Transform rfDerived, Transform vioDerived)
             {
-                // TODO: Test ToFusion()
                 Transform fusion = (new GameObject()).transform; // Instantiate new transform. This is the easiest way to do it
                 fusion.position = (rfDerived.position + vioDerived.position) / 2f;
                 fusion.rotation = rfDerived.rotation; // Both rotations are driven by VIO right now. 
                 fusion.localScale = rfDerived.localScale; // Scale is never changed.
 
                 return fusion;
-            }
-        }
-
-        /// <summary>
-        /// Contains basic math functions used for VIO localization
-        /// </summary>
-        public class VIO
-        {
-            /// <summary>
-            /// Given the transforms of the RF and VIO origins, as well as position in VIO, maps vioPosition to RF space
-            /// </summary>
-            /// <param name="rfOrigin">Transform of RF Origin</param>
-            /// <param name="vioOrigin">Transform of VIO origin</param>
-            /// <param name="vioPosition">Position in VIO space</param>
-            /// <returns>Position in RF space</returns>
-            public static Vector3 PositionToRF(Transform rfOrigin, Transform vioOrigin, Vector3 vioPosition)
-            {
-                return Vector3.zero; // TODO
-            }
-
-            /// <summary>
-            /// Given the transforms of the RF and VIO origins, as well as orientation in VIO, maps vioRotation to RF space
-            /// </summary>
-            /// <param name="rfOrigin">Transform of RF Origin</param>
-            /// <param name="vioOrigin">Transform of VIO origin</param>
-            /// <param name="vioRotation">Orientation in VIO space</param>
-            /// <returns>Position in RF space</returns>
-            public static Vector3 RotationToRF(Transform rfOrigin, Transform vioOrigin, Quaternion vioRotation)
-            {
-                return Vector3.zero; // TODO
-            }
-
-            /// <summary>
-            /// Given the transforms of the RF and VIO origins, as well as transform in VIO, maps vioTransform to RF space
-            /// </summary>
-            /// <param name="rfOrigin"></param>
-            /// <param name="vioOrigin"></param>
-            /// <param name="vioTransform"></param>
-            /// <returns></returns>
-            public static Transform TransformToRF(Transform rfOrigin, Transform vioOrigin, Transform vioTransform)
-            {
-                return null; // TODO
             }
         }
 
