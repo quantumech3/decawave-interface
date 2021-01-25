@@ -10,7 +10,9 @@ public class RotatePivot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        xRot = GameObject.Find("XRot").GetComponent<Slider>();
+        yRot = GameObject.Find("YRot").GetComponent<Slider>();
+        zRot = GameObject.Find("ZRot").GetComponent<Slider>();
     }
 
     // Update is called once per frame

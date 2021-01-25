@@ -9,6 +9,8 @@ public class RFGhostBehavior : MonoBehaviour
     public static Dictionary<int, Vector3> ANCHORS = new Dictionary<int, Vector3>();
 
     public int[] anchorIds = new int[] { 0xA92, 0x8B08, 0xC70C, 0xCC93 };
+    public GameObject rfOrigin; 
+
     public Vector3[] anchorPositions = new Vector3[] // Paralell array containing positions of each anchor with an ID above
     {
         new Vector3(3f, 1.5f, 6f),
@@ -16,6 +18,19 @@ public class RFGhostBehavior : MonoBehaviour
         new Vector3(0, 1.5f, 6f),
         new Vector3(0, 0, 0)
     };
+
+    /// <summary>
+    /// Returns transform of RF ghost taking into account initial rotation offset
+    /// </summary>
+    /// <param name="initRotation">Initial theta0 of player</param>
+    public Transform GetTransform()
+    {
+        Transform thisTransform = (new GameObject()).transform;
+        thisTransform.position = transform.position;
+        thisTransform.rotation = thisTransform.rotation * rfOrigin.transform.rotation; // Quaternion.Euler(rfOrigin.transform.rotation.eulerAngles.x + this.transform.rotation.eulerAngles.x, initRotation.y + transform.rotation.eulerAngles.y, initRotation.z + transform.rotation.eulerAngles.z);
+
+        return thisTransform;
+    }
 
     void Start()
     {

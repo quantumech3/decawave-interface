@@ -62,3 +62,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d20e72cad6a44aa42af3296b064846a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anchorIds: 920a0000088b00000cc7000093cc0000
+  anchorPositions:
+  - {x: 3, y: 1.5, z: 6}
+  - {x: 3, y: 1.5, z: 0}
+  - {x: 0, y: 1.5, z: 6}
+  - {x: 0, y: 0, z: 0}

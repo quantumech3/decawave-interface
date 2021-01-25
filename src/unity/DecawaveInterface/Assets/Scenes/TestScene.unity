@@ -147,12 +147,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22831536}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.19423473, y: 0.19423473, z: 0.19423473}
+  m_LocalScale: {x: 0.42939472, y: 0.42939472, z: 0.42939472}
   m_Children: []
-  m_Father: {fileID: 1519245162}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &22831538
 BoxCollider:
@@ -322,6 +322,7 @@ GameObject:
   - component: {fileID: 577256231}
   - component: {fileID: 577256232}
   - component: {fileID: 577256233}
+  - component: {fileID: 577256234}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -414,6 +415,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AnchorPrefab: {fileID: 4869069570339909344, guid: cca0f8e537abd6540b496001b98833dd,
     type: 3}
+--- !u!114 &577256234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577256227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2255f93dac317774f865168ec7b2d306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xRot: {fileID: 1774093183}
+  yRot: {fileID: 1774093182}
+  zRot: {fileID: 1774093181}
 --- !u!1 &702578357
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,8 +639,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 22831537}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
