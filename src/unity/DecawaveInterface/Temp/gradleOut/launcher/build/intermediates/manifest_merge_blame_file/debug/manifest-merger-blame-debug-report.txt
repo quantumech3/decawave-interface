@@ -152,7 +152,7 @@
 85-->[:unityLibrary] C:\Users\quant\Documents\Actual projects\decawave-interface\decawave-interface\src\unity\DecawaveInterface\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:9-69:68
 86            android:name="unity.build-id"
 86-->[:unityLibrary] C:\Users\quant\Documents\Actual projects\decawave-interface\decawave-interface\src\unity\DecawaveInterface\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-42
-87            android:value="0bb5a2cd-b2e0-409a-8403-b9467a48d963" />
+87            android:value="97c0ff33-f617-400b-bb81-3d3bcc3204bf" />
 87-->[:unityLibrary] C:\Users\quant\Documents\Actual projects\decawave-interface\decawave-interface\src\unity\DecawaveInterface\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:13-65
 88        <meta-data
 88-->[:unityLibrary] C:\Users\quant\Documents\Actual projects\decawave-interface\decawave-interface\src\unity\DecawaveInterface\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:70:9-72:36

@@ -67,6 +67,7 @@
     <Compile Include="Assets\Tests\HighLevel\Scripts\AnchorPlacementHandler.cs" />
     <Compile Include="Assets\Tests\HighLevel\Scripts\LocalAnchorDisplacementLogger.cs" />
     <Compile Include="Assets\Tests\HighLevel\Scripts\PositionLogger.cs" />
+    <Compile Include="Assets\Tests\HighLevel\Scripts\RFPoseLogger.cs" />
     <Compile Include="Assets\Tests\HighLevel\Scripts\RotatePivot.cs" />
     <Compile Include="Assets\Tests\LowLevel\Scripts\LowLevelTestDriver.cs" />
     <Reference Include="UnityEngine">
