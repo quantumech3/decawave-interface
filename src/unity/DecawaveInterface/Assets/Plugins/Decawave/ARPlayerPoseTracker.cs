@@ -36,7 +36,8 @@ public class ARPlayerPoseTracker : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Decawave.LowLevel.Interface.Initialize(); 
+        if(isLocalPlayer)
+            Decawave.LowLevel.Interface.Initialize(); 
         
         // Find RF Origin in scene
         rfOrigin = GameObject.Find(rfOriginName);
