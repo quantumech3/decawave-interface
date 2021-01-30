@@ -21,7 +21,7 @@ namespace Decawave
             private static AndroidJavaClass javaSerialInterface;
 
 
-            //TODO: Double check that these values hold for the second tag
+            
             /// <summary>
             /// Vendor ID of all Decawaves (probably)
             /// </summary>
@@ -38,7 +38,7 @@ namespace Decawave
 
                 public void onException(AndroidJavaObject exception)
                 {
-                    throw new LowLevelException(exception.Call<string>("toString")); // TODO test this
+                    throw new LowLevelException(exception.Call<string>("toString"));
                 }
             }
 
@@ -229,7 +229,8 @@ namespace Decawave
             }
 
             /// <summary>
-            /// Read only attribute that returns a list of AnchorData objects containing the ID of each anchor and each associated distance if possible, else throws DecawaveLowLevelException
+            /// Read only attribute that returns a list of AnchorData objects containing the ID of each anchor and each associated distance if possible, else throws DecawaveLowLevelException.
+            /// Returns empty array if data retrieved from Decawave is corrupt or incomplete
             /// </summary>
             /// <exception cref="LowLevelException"></exception>
             public static Common.AnchorData[] anchors
@@ -252,7 +253,7 @@ namespace Decawave
                         for (int i = 0; i < nDistancesRecorded; i++)
                         {
                             anchors[i].id = BitConverter.ToUInt16(rawData, 20 * (i + 1) + 1);
-                            anchors[i].distance = BitConverter.ToUInt32(rawData, 20 * (i + 1) + 3) / 100.;
+                            anchors[i].distance = ((double) BitConverter.ToUInt32(rawData, 20 * (i + 1) + 3)) / 1000f;
                         }
 
                         return anchors;
@@ -261,7 +262,7 @@ namespace Decawave
                     {
                         Debug.Log("[LowLevelInterface] Dropped garbage distances");
                         Serial.Flush(1);
-                        return anchors;
+                        return new Common.AnchorData[0];
                     }
                 }
             }

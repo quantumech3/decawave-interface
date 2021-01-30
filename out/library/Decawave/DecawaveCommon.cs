@@ -7,7 +7,7 @@ namespace Decawave
     namespace Common
     {
         /// <summary>
-        /// Contains distances between TAG and RF anchor with ID of AnchorData.id
+        /// Contains distances between TAG and RF anchor with ID of AnchorData.id.
         /// </summary>
         public struct AnchorData
         {

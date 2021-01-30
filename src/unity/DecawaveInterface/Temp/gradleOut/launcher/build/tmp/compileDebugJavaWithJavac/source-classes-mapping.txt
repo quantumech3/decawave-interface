@@ -1,2 +1,0 @@
-com/arlazertag/DecawaveInterface/BuildConfig.java
- com.arlazertag.DecawaveInterface.BuildConfig
